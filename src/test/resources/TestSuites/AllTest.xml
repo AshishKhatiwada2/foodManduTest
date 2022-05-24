@@ -1,0 +1,17 @@
+<suite name="AllTests" verbose="1">
+    <test name="PositiveTests">
+        <classes>
+            <class name="com.example.seleniumtry3.PositiveTests"/>
+        </classes>
+    </test>
+    <test name="NegativeTests">
+        <classes>
+            <class name="com.example.seleniumtry3.NegativeTests"/>
+        </classes>
+    </test>
+    <test name="MainPage">
+        <classes>
+            <class name="com.example.seleniumtry3.MainPage"/>
+        </classes>
+    </test>
+</suite>

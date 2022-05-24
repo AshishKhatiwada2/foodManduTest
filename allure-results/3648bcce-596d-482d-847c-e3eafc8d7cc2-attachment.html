@@ -1,0 +1,2108 @@
+<html lang="en" data-ng-app="foodmandu_app" class="ng-scope"><head><style type="text/css">[uib-typeahead-popup].dropdown-menu{display:block;}</style><style type="text/css">.uib-time input{width:50px;}</style><style type="text/css">[uib-tooltip-popup].tooltip.top-left > .tooltip-arrow,[uib-tooltip-popup].tooltip.top-right > .tooltip-arrow,[uib-tooltip-popup].tooltip.bottom-left > .tooltip-arrow,[uib-tooltip-popup].tooltip.bottom-right > .tooltip-arrow,[uib-tooltip-popup].tooltip.left-top > .tooltip-arrow,[uib-tooltip-popup].tooltip.left-bottom > .tooltip-arrow,[uib-tooltip-popup].tooltip.right-top > .tooltip-arrow,[uib-tooltip-popup].tooltip.right-bottom > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.top-left > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.top-right > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.bottom-left > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.bottom-right > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.left-top > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.left-bottom > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.right-top > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.right-bottom > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.top-left > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.top-right > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.bottom-left > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.bottom-right > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.left-top > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.left-bottom > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.right-top > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.right-bottom > .tooltip-arrow,[uib-popover-popup].popover.top-left > .arrow,[uib-popover-popup].popover.top-right > .arrow,[uib-popover-popup].popover.bottom-left > .arrow,[uib-popover-popup].popover.bottom-right > .arrow,[uib-popover-popup].popover.left-top > .arrow,[uib-popover-popup].popover.left-bottom > .arrow,[uib-popover-popup].popover.right-top > .arrow,[uib-popover-popup].popover.right-bottom > .arrow,[uib-popover-html-popup].popover.top-left > .arrow,[uib-popover-html-popup].popover.top-right > .arrow,[uib-popover-html-popup].popover.bottom-left > .arrow,[uib-popover-html-popup].popover.bottom-right > .arrow,[uib-popover-html-popup].popover.left-top > .arrow,[uib-popover-html-popup].popover.left-bottom > .arrow,[uib-popover-html-popup].popover.right-top > .arrow,[uib-popover-html-popup].popover.right-bottom > .arrow,[uib-popover-template-popup].popover.top-left > .arrow,[uib-popover-template-popup].popover.top-right > .arrow,[uib-popover-template-popup].popover.bottom-left > .arrow,[uib-popover-template-popup].popover.bottom-right > .arrow,[uib-popover-template-popup].popover.left-top > .arrow,[uib-popover-template-popup].popover.left-bottom > .arrow,[uib-popover-template-popup].popover.right-top > .arrow,[uib-popover-template-popup].popover.right-bottom > .arrow{top:auto;bottom:auto;left:auto;right:auto;margin:0;}[uib-popover-popup].popover,[uib-popover-html-popup].popover,[uib-popover-template-popup].popover{display:block !important;}</style><style type="text/css">.uib-datepicker-popup.dropdown-menu{display:block;float:none;margin:0;}.uib-button-bar{padding:10px 9px 2px;}</style><style type="text/css">.uib-position-measure{display:block !important;visibility:hidden !important;position:absolute !important;top:-9999px !important;left:-9999px !important;}.uib-position-scrollbar-measure{position:absolute !important;top:-9999px !important;width:50px !important;height:50px !important;overflow:scroll !important;}.uib-position-body-scrollbar-measure{overflow:scroll !important;}</style><style type="text/css">.uib-datepicker .uib-title{width:100%;}.uib-day button,.uib-month button,.uib-year button{min-width:100%;}.uib-left,.uib-right{width:100%}</style><style type="text/css">.ng-animate.item:not(.left):not(.right){-webkit-transition:0s ease-in-out left;transition:0s ease-in-out left}</style><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Foodmandu: Food Delivery Service in Kathmandu and Pokhara</title>
+
+    <meta name="description" content="Order food online from hundreds of popular restaurants in Kathmandu, Lalitpur, Bhaktapur and Pokhara through our website, mobile app or over the phone. Founded in 2010, Foodmandu is the first company in Nepal to introduce on-demand food delivery service.  Our delivery rider brings your food right at your doorstep in minutes.">
+    <meta name="keywords" content="food delivery service, food delivery in Kathmandu, food delivery in Pokhara, food delivery service in Kathmandu, food delivery service in Pokhara, food delivery service Kathmmandu, food delivery service in Nepal, order food online, food ordering app, on-demand food delivery, online food order, restaurant food delivery Kathmandu, restaurant delivrey Pokhara, food delivery, restaurant food delivery Kathmandu Nepal, home delivery Kathmandu, home delivery Pokhara, pizza delivery Kathmandu Nepal">
+
+    <meta property="og:site_name" content="Foodmandu Main">
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="en_US">
+    <meta property="fb:app_id" content="969000026453563">
+    <meta property="og:url" content="https://foodmandu.com/">
+    <meta property="og:title" content="Foodmandu: Food Delivery Service in Kathmandu">
+    <meta property="og:description" content="Order food online from hundreds of popular restaurants in Kathmandu, Lalitpur, Bhaktapur and Pokhara through our website, mobile app or over the phone. Founded in 2010, Foodmandu is the first company in Nepal to introduce on-demand food delivery service.  Our delivery rider brings your food right at your doorstep in minutes.">
+    <meta property="og:image" content="https://foodmandu.com/img/logo-n.png">
+    <meta property="og:image:width" content="570">
+    <meta property="og:image:height" content="280">
+    
+    <meta property="article:published_time" content="2017-11-12T12:19:19+00:00">
+    <meta property="article:modified_time" content="2019-12-28T00:19:19+00:00">
+    <meta property="article:author" content="https://foodmandu.com/restaurant/index">
+    <meta property="article:section" content="Others">
+    
+    <meta property="article:tag" content="Foodmandu">
+
+
+
+    <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="/css/main.css">
+
+    <style type="text/css">
+        [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+            display: none !important;
+        }
+
+        .addItemParent {
+            position: fixed;
+            bottom: 2rem;
+            left: 2rem;
+            opacity: 0.5;
+        }
+
+            .addItemParent:hover {
+                opacity: 1;
+            }
+
+
+        .addItemText {
+            margin: 0;
+            color: #fff;
+            position: relative;
+            top: 5px;
+            align-content: center;
+            font-size: 15px;
+        }
+
+        input.error, textarea.error {
+            border: 1px solid #9F1D22;
+        }
+
+        .typeahead .custom-popup-wrapper {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            z-index: 1000;
+            display: none;
+            background-color: #f9f9f9;
+        }
+
+            .typeahead .custom-popup-wrapper > .message {
+                padding: 10px 20px;
+                border-bottom: 1px solid #ddd;
+                color: #868686;
+            }
+
+            .typeahead .custom-popup-wrapper > .dropdown-menu {
+                position: static;
+                float: none;
+                display: block;
+                min-width: 160px;
+                background-color: transparent;
+                border: none;
+                border-radius: 0;
+                box-shadow: none;
+                display: block;
+                padding: .5rem .75rem;
+                clear: both;
+                color: #333;
+                text-decoration: none;
+            }
+
+
+        .dropdown-menu :hover {
+            background-color: lightgray;
+            color: #9F1D22;
+        }
+
+        .dropdown-menu {
+            font-size: 14px;
+            text-transform: capitalize;
+            padding: 10px;
+            width: 339px;
+        }
+
+        /*.loadinggif {
+            background: url('https://www.hsi.com.hk/HSI-Net/pages/images/en/share/ajax-loader.gif') no-repeat right center;
+        }*/
+
+
+
+
+        .dropdown-menu span {
+            cursor: pointer;
+        }
+
+        .typeahead-demo .custom-popup-wrapper > .dropdown-menu {
+            position: static;
+            float: none;
+            display: block;
+            min-width: 160px;
+            border: none;
+            border-radius: 0;
+            box-shadow: 1px 1px 1px 1px #868686;
+        }
+
+        .clearSearch1 {
+            position: relative;
+            cursor: pointer;
+            float: right;
+            margin-right: -50px;
+            margin-top: -25px;
+        }
+
+        .clearSearch2 {
+            float: right;
+            margin-right: 30px;
+            margin-top: -26px;
+            padding: 1px;
+            cursor: pointer;
+        }
+    </style>
+
+    
+<style>
+	.dropdown-menu, .uib-typeahead-match {
+		width: 100%;
+	}
+	/*.banner{
+			background-size:auto !important;
+		}*/
+	/*.loadinggif {
+		background: url('http://www.hsi.com.hk/HSI-Net/pages/images/en/share/ajax-loader.gif') no-repeat right center;
+	}*/
+
+	.clearSearch {
+		position: relative;
+		z-index: 100;
+		top: 30%;
+		margin-left: -20px;
+		cursor: pointer;
+	}
+
+	.dropdown-menu > li > a {
+		display: block;
+		padding: 3px 20px;
+		clear: both;
+		font-weight: 400;
+		line-height: 1.42857143;
+		color: #333;
+		white-space: nowrap;
+	}
+
+	.typeahead-demo .custom-popup-wrapper {
+		position: absolute;
+		top: 100%;
+		left: 0;
+		z-index: 1000;
+		display: none;
+		background-color: #f9f9f9;
+	}
+
+	.btn-fmd {
+		background: #94181b;
+		color: #fff;
+		margin-left: 10%;
+		font-weight: 700;
+	}
+
+	.typeahead-demo .custom-popup-wrapper > .message {
+		padding: 10px 20px;
+		border-bottom: 1px solid #ddd;
+		color: #868686;
+	}
+
+	.typeahead-demo .custom-popup-wrapper > .dropdown-menu {
+		position: static;
+		float: none;
+		display: block;
+		min-width: 160px;
+		background-color: transparent;
+		border: none;
+		border-radius: 0;
+		box-shadow: none;
+	}
+	 
+</style>
+
+	<style>
+		/* subscribe */
+
+		.subscribe-body { 
+			background: #fff;
+			padding: 30px;
+			position: relative;
+			z-index: 1;
+			margin-top: 10%;
+			text-align: left;
+			box-shadow: 0px 0 50px -20px #000;
+		}
+
+			.subscribe-body .slack-message {
+				box-shadow: none;
+				border-radius: 0;
+
+			}
+				.subscribe-body .slack-message img {
+					height:500px;
+					border: 1px solid #ddd;
+				}
+
+				/*.subscribe-body .form-control {
+				height: 140px;
+				border: 1px solid #ddd;
+				box-shadow: none;
+				border-radius: 0;
+			}
+
+			.subscribe-body .btn {
+				padding: 10px 11px;
+				background: #94181b;
+				border: none;
+				color: #fff;
+				border-radius: 0;
+				margin-top: 20px;
+			}
+
+			.subscribe-body .btn:hover {
+				background: #1f415a;
+			}*/
+				.subscribe button#btn_show {
+					background: #94181b;
+					color: #fff;
+					border-radius: 5px 5px 0 0px;
+					position: fixed;
+					right: -70px;
+					top: 45%;
+					-ms-transform: rotate(-90deg);
+					-webkit-transform: rotate(-90deg);
+					transform: rotate(-90deg);
+					border: none;
+					padding: 10px 20px;
+					font-weight: 700;
+				}
+
+			.subscribe button#btn_show:hover {
+				background: #d83e3e;
+			}
+
+		.subscribe {
+			position: fixed;
+			z-index: 9999999999999;
+			top: 5%;
+			right: 0;
+		}
+
+		span#btn_hide {
+			display: block;
+			text-align: right;
+			position: absolute;
+			right: 10px;
+			top: 10px;
+		}
+
+		span#btn_hide:hover {
+			cursor: pointer;
+		}
+
+		.subscribe .form-group {
+			margin-bottom: 0;
+		}
+
+		.subscribe-body p {
+			margin-bottom: 15px;
+		}
+
+		span#btn_hide i {
+			border-radius: 50%;
+			box-shadow: none;
+			border: none;
+			background-color: #94181b;
+			margin-bottom: 10px;
+			height: 20px;
+			width: 20px;
+			line-height: 2;
+			color: #fff;
+			text-align: center;
+			vertical-align: middle;
+			font-size: 10px;
+		}
+ 
+	</style>
+
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script src="https://connect.facebook.net/signals/config/308059273968291?v=2.9.60&amp;r=stable" async=""></script><script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-18855741-1"></script>
+    <script>        window.dataLayer = window.dataLayer || [];        function gtag(){dataLayer.push(arguments);}        gtag('js', new Date());          gtag('config', 'UA-18855741-1');      </script>
+
+
+    <!-- Facebook Pixel Code -->
+    <script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window,document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '308059273968291');
+fbq('track', 'PageView');
+    </script>
+    <noscript>
+        <img height="1" width="1"
+             src="https://www.facebook.com/tr?id=904447423410664&ev=PageView
+&noscript=1" />
+    </noscript>
+    <!-- End Facebook Pixel Code -->
+
+</head>
+<body>
+
+    <header class="header ng-scope" ng-controller="mobilePopupController">
+        <div class="bg-success ng-hide" ng-show="showMobilePopup">
+            <a href="javascript:;" ng-click="showMobilePopup=false" style="float:right;"><i class="glyphicon icon-close"></i></a>
+            <br>
+            <div class="text-center">
+                <h5 style="color:white">
+                    For better user experience, please download our mobile App.
+                </h5>
+
+                <a href="https://foodmandu.app.link/81odath7Y6">
+                    <label class="btn btn--hollow" style="background-color:white;">
+                        DOWNLOAD NOW
+                    </label>
+                </a>
+
+            </div>
+        </div><!-- modal-container -->
+        <div class="container ng-scope" data-ng-controller="ProductTopController">
+            <div class="row">
+                <div class="col-md-3 col-4 header__logo">
+                    <a href="/" class="site-logo"><img src="/img/logo-n.png" alt="Foodmandu"></a>
+                </div>
+                
+                <div class="list-inline col-md-6 hidden-sm-down">
+
+                    <div class="list-inline-item col-sm-7 ng-hide" ng-show="!is_index">
+                        <input type="search" ng-model="fm_filter.search_text" name="q" placeholder="Restaurant name or cuisine" style="width:339px;height:35px;" autocomplete="off" class="form-control small ng-pristine ng-untouched ng-valid ng-empty">
+                        <span class="icon-close red clearSearch1 ng-hide" ng-show="fm_filter.search_text" ng-hide="!fm_filter.searchtext" ng-click="fm_filter.search_text=''"></span>
+
+                        <!--autosuggest part-->
+                        
+                        <!--autosuggest part-->
+                        
+
+                        
+                    </div>
+                    
+                    <a class="btn btn--primary hidden-sm-down list-inline-item col-sm-4 text-white ng-hide" ng-show="!is_index" ng-click="SearchBy()" style="float:right;height:35px;">Find Restaurants</a>
+                </div>
+
+                                <div class="col-8 offset-md-5 offset-lg-0 col-md-4 col-lg-3 header__right-menu">
+                                    <ul class="list-inline float-right">
+                                        <li class="list-inline-item hidden-md-up mr-0"><span class="icomoon icon-search"></span></li>
+                                        
+                                        <li class="list-inline-item"><button class="btn btn--hollow hidden-sm-down" ng-click="OpenLoginForm()">Login</button></li>
+                                        <li class="list-inline-item"><button class="btn btn--hollow hidden-md-up hidden-lg-up" ng-click="OpenLoginForm()">Login</button></li>
+                                    </ul>
+
+                                    <div class="header__search-dropdown hidden-md-up display-none">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="search search--navbar my-2 my-md-0">
+                                                        <input type="text" ng-model="fm_filter.search_text" name="q" placeholder="Restaurant name or cuisine" ng-keyup="LoadAutoSuggest()" autocomplete="off" role="menu" typeahead-on-select="setPcode($item)" ng-class="autoloading?'form-control small':'form-control small '" uib-typeahead="data.DisplayText for data in suggests | filter:{DisplayText:$viewValue}" typeahead-template-url="customTemplate.html" typeahead-min-length="0" class="ng-pristine ng-untouched ng-valid ng-empty form-control small" aria-autocomplete="list" aria-expanded="false" aria-owns="typeahead-4-7677"><ul class="dropdown-menu ng-isolate-scope ng-hide" ng-show="isOpen() &amp;&amp; !moveInProgress" ng-style="{top: position().top+'px', left: position().left+'px'}" role="listbox" aria-hidden="true" uib-typeahead-popup="" id="typeahead-4-7677" matches="matches" active="activeIdx" select="select(activeIdx, evt)" move-in-progress="moveInProgress" query="query" position="position" assign-is-open="assignIsOpen(isOpen)" debounce="debounceUpdate" template-url="customTemplate.html">
+    <!-- ngRepeat: match in matches track by $index -->
+</ul>
+                                                        <span class="icon-close red clearSearch2 ng-hide" ng-show="fm_filter.search_text" ng-hide="!fm_filter.searchtext" ng-click="fm_filter.search_text=''"></span>
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        <button class="inline-button" ng-click="SearchBy()" ng-hide="autoloading">
+                                                            <span class="icomoon icon-search"></span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+            </div>
+        </div>
+
+        <script type="text/ng-template" id="Foodmandu_Login">
+<div class="container">
+	<div class="row">
+		<div class="col-md-5 login__bg" style="background-image: url('/img/item-img.png');">
+
+		</div>
+		<div class="col-md-7 login__form-container">
+			<div class="modal-action modal-action--cancel" data-ng-click="cancelEditing()">×</div>
+			<div class="modal-header">
+				<div class="row">
+					<div class="col-md-12">
+						<h3 class="modal-title mb-2" id="modal-title">Login to Foodmandu</h3>
+					</div>
+				</div>
+			</div><!-- .modal-header -->
+
+			<div class="modal-body mt-3" id="modal-body">
+<form action="/Account/Login" class="login-form margin-clear" method="post" name="loginform" returnUrl="/" role="form"><input name="__RequestVerificationToken" type="hidden" value="rPHWbz0ji1PKzsXSWob3vqNP9v96dRqFKM9hf4ooY-Gt0udFvywLQZLg2NalSRazzuecyRcxpVv-f1qZ-U_6Xnjx5Q41" />					<input type="text" name="returnUrl" value="/" hidden />
+						<div class="row">
+							<div class="form-group col-sm-12">
+								<label class="small-title">Email Address</label>
+								<input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"  ng-class="{'form-control error': (loginform.Email.$error.required&&loginform.Email.$touched)||loginform.$submitted, 'form-control':Email!=''}" ng-model="Email" placeholder="you@yourname.com" name="Email" required>
+								
+							</div>
+							<div class="form-group col-sm-12">
+								<label class="small-title">Enter Password</label>
+								<input type="password" class="form-control" ng-class="{'form-control error': (loginform.Password.$error.required&&loginform.Password.$touched)||loginform.$submitted, 'form-control': Password!=''}" ng-model="Password" placeholder="" name="Password" required>
+								
+							</div>
+							<div class="col-sm-12">
+								<input type="checkbox" value="true" name="RememberMe" id="agreement">
+								
+								<label for="agreement">
+									Remember Me
+								</label>
+								<input type="hidden" value="false" name="RememberMe" />
+							</div>
+							<div class="col-sm-12">
+								<button type="submit" class="btn btn--primary btn-block">Login</button>
+							</div>
+						</div>
+					<hr>
+</form>			
+<form action="/Account/ExternalLogin" id="externalLoginForm" method="post"><input name="__RequestVerificationToken" type="hidden" value="AphR3sAoi1VbB5kKEIxgzychgz6K9pGiWjaAfr3eSwJpeEM8KyhiaokpoS6NyUqV-GwYPPLHwZh3P5GWPKraZ8TjQvo1" />						<div class="login__other-options row">
+							<div class="col-md-12 text-center small-title mb-3 mt-3">Or Login Using</div>
+										<div class="col-6">
+											<div class="btn btn--facebook btn-block mb-3 mb-md-0"><a href="javascript:document.getElementById('btnFacebook').click()" style="color:#fff;">Facebook</a></div>
+											<button class="display-none" id="btnFacebook" name="provider" value="Facebook"></button>
+										</div>
+										<div class="col-6">
+											<div class="btn btn--googleplus btn-block mb-3 mb-md-0"><a href="javascript:document.getElementById('btnGoogle').click()" style="color:#fff;">Google Plus </a></div>
+											<button class="display-none" id="btnGoogle" name="provider" value="Google"></button>
+										</div>
+							
+
+						</div>
+</form>				<div class="col-md-12 text-center">
+					<p class="mt-md-4">Don't have an account? <a href="javsascript:;"span class="green" ng-click="OpenSignUpForm();">Signup</a></p>
+                    
+				</div>
+                <div class="col-md-12 text-center">
+                    <p class="mt-md-4"><a href="/Account/ForgotPassword">Forgot Password?</a></p>
+                    
+                    </div>
+
+		</div><!-- .modal-body -->
+	</div>
+</div>
+</div><!-- modal-container -->
+
+
+				
+        </script>
+
+        <script type="text/ng-template" id="Foodmandu_Signup">
+
+<div class="container">
+    <div class="modal-action modal-action--cancel" data-ng-click="cancelEditing()">×</div>
+    <div class="modal-header">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="modal-title mb-2" id="modal-title">Signup for Foodmandu</h3>
+            </div>
+        </div>
+    </div><!-- .modal-header -->
+
+    <div class="modal-body signup__form-container mt-3" id="modal-body">
+<form action="/Account/Register" class="signup__form" method="post" name="signupform" returnUrl="/" role="form"><input name="__RequestVerificationToken" type="hidden" value="0os07vAGb8KVQ405iFRi-ChAL2h5Fp13t9tIMP7NGOSrrgZ8T53JVyodhud3TXqj-0AYEkfxZPQyeAgThmlTJKrZfMs1" />            <div class="row">
+                <div class="form-group col-sm-6">
+                    <label class="small-title">First Name</label>
+                    <input type="text" ng-class="{'form-control error': (signupform.FirstName.$error.required&&signupform.FirstName.$touched)||signupform.$submitted, 'form-control': FirstName!=''}" name="FirstName" placeholder="Your Name" ng-model="FirstName" required="" />
+                    <div ng-show="signupform.$submitted || signupform.FirstName.$touched">
+                        <p class="red" ng-show="signupform.FirstName.$error.required">First name is required.</p>
+                    </div>
+                </div>
+                <div class="form-group col-sm-6">
+                    <label class="small-title">Last Name</label>
+                    <input type="text" ng-class="{'form-control error': (signupform.LastName.$error.required&&signupform.LastName.$touched)||signupform.$submitted, 'form-control': LastName!=''}" name="LastName" placeholder="Your Name" ng-model="LastName" required="" />
+                    <div ng-show="signupform.$submitted || signupform.LastName.$touched">
+                        <p class="red" ng-show="signupform.LastName.$error.required">Last name is required.</p>
+                    </div>
+                </div>
+
+                <div class="form-group col-sm-6">
+                    <label class="small-title">Email Address</label>
+                    <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" ng-class="{'form-control error': (signupform.Email.$error.required&&signupform.Email.$touched)||signupform.$submitted, 'form-control': Email!=''}" name="Email" placeholder="you@yourname.com" ng-model="Email" required="" />
+                    <div ng-show="signupform.$submitted || signupform.Email.$touched">
+                        <p class="red" ng-show="signupform.Email.$error.required">Email  is required.</p>
+                    </div>
+
+                </div>
+                <div class="form-group col-sm-6">
+                    <label class="small-title">Mobile Number</label>
+                    <input type="text" name="PhoneNumber" ng-class="{'form-control error': (signupform.PhoneNumber.$error.required&&signupform.PhoneNumber.$touched)||signupform.$submitted, 'form-control': PhoneNumber!=''}" class="form-control" placeholder="98XXXXXXXX" minlength="10" maxlength="10" onkeypress='return event.charCode >= 48 && event.charCode <= 57' ng-model="PhoneNumber" required="" />
+                    <div ng-show="signupform.$submitted || signupform.PhoneNumber.$touched">
+                        <p class="red" ng-show="signupform.PhoneNumber.$error.required||PhoneNumber.length!=10">Valid Mobile Number  is required.</p>
+                    </div>
+                </div>
+
+                <div class="form-group col-sm-6">
+                    <label class="small-title">Choose a Password</label>
+                    <input type="password" name="Password" ng-class="{'form-control error': (signupform.Password.$error.required&&signupform.Password.$touched)||signupform.$submitted, 'form-control': Password!=''}" ng-model="Password" placeholder="" required="" />
+                    <div ng-show="signupform.$submitted || signupform.Password.$touched">
+                        <p class="red" ng-show="signupform.Password.$error.required">Password  is required.</p>
+
+                    </div>
+                </div>
+                <div class="form-group col-sm-6">
+                    <label class="small-title">Confirm Password</label>
+                    <input type="password" name="ConfirmPassword" ng-class="{'form-control error': (signupform.ConfirmPassword.$error.required&&signupform.ConfirmPassword.$touched)||signupform.$submitted, 'form-control': ConfirmPassword!=''}" ng-model="ConfirmPassword" placeholder="" required="" />
+                    <div ng-show="signupform.$submitted || signupform.ConfirmPassword.$touched">
+                        <p class="red" ng-show="signupform.ConfirmPassword.$error.required">Confirm password  is required.</p>
+
+                    </div>
+                    <p ng-show="Password!=ConfirmPassword&&signupform.ConfirmPassword.$dirty" class="red">No match!</p>
+
+                </div>
+                <div class="form-group col-sm-12">
+                    <!-- Insert captcha here -->
+                    <fm-Recaptcha></fm-Recaptcha>
+
+                    <label>
+                        
+                    </label>
+
+                </div>
+
+                <div class="col-sm-12">
+                    <label>
+                        By Signing Up, I agree to Foodmandu’s <a href="/Home/TermsAndPrivacy" title="Foodmandu Terms of Use">Terms of Use</a> and <a href="/Home/TermsAndPrivacy" title="Foodmandu Privacy Policy">Privacy Policy</a>.
+                    </label>
+                </div>
+
+                <div class="col-sm-12">
+                    <button type="submit" class="btn btn--primary btn-block" ng-disabled="signupform.$invalid||Password!=ConfirmPassword">Sign Up</button>
+                </div>
+            </div>
+            <hr>
+</form>
+<form action="/Account/ExternalLogin" id="externalLoginForm" method="post"><input name="__RequestVerificationToken" type="hidden" value="rjdVvpdX1lqVOIlDHVASlu1YJF3MuLtqbC6xyrB-wZcCbx4Ps_thtfr5chmD2rgCXLqmjj2v_GyoppsPTRRVHE3q1Fc1" />                <div class="signup__other-options row">
+                    <div class="col-md-12 text-center small-title mb-3 mt-3">Or Signup Using</div>
+                                <div class="col-6">
+                                    <div class="btn btn--facebook btn-block mb-3 mb-md-0"><a href="javascript:document.getElementById('btnFacebook').click()" style="color:#fff;">Facebook</a></div>
+                                    <button class="display-none" id="btnFacebook" name="provider" value="Facebook"></button>
+                                </div>
+                                <div class="col-6">
+                                    <div class="btn btn--googleplus btn-block mb-3 mb-md-0"><a href="javascript:document.getElementById('btnGoogle').click()" style="color:#fff;">Google Plus </a></div>
+                                    <button class="display-none" id="btnGoogle" name="provider" value="Google"></button>
+                                </div>
+                    
+                    <div class="col-md-12 text-center">
+                        <p class="mt-md-4">Already have an account? <a href="/Account/Login">Sign in</a></p>
+                    </div>
+                </div>
+</form>
+
+    </div>
+    <!-- .modal-body -->
+</div><!-- modal-container -->
+
+
+        </script>
+
+    </header>
+    <div class="masthead-space"></div>
+
+    <!-- You write code for this content block in another file -->
+    
+
+
+<div data-ng-controller="dashboardController" class="ng-scope">
+    <section class="banner banner--landing d-flex align-items-center parallax">
+
+        <div class="container parallax__front">
+
+            <div class="row">
+                <div class="col-md-9 col-lg-8 col-sm-9 mx-auto hero__container">
+
+                    <h2 class="text-center col-md-12">Order food from the widest range of restaurants.</h2>
+                    <div class="row">
+                        <a href="/Views/Home/Index.cshtml"></a>
+                        <div class="col-md-9 mx-auto mt-3 search search--hero no-padding-md input-group">
+
+                            <input type="search" class="search form-control form-control-lg cta-search animate-bg ng-pristine ng-untouched ng-valid ng-empty" ng-enter="SearchBy()" ng-model="fm_filter.search_text" placeholder="Restaurant or Cuisine (leave it blank to browse all)">
+
+                            <!--autosuggest temporarily disabled-->
+                            
+                            <!--end autosuggest temporary disabled-->
+                            <span class="icon-close red clearSearch ng-hide" ng-show="fm_filter.search_text" ng-hide="!fm_filter.searchtext" ng-click="fm_filter.search_text=''"></span>
+
+
+                        </div>
+
+                        <div class="hidden-sm-down col-md-3 mt-3 no-padding-md">
+                            <button class="btn btn--primary btn-lg btn-block" ng-click="SearchBy()" type="button">
+                                <span ng-show="fm_filter.search_type=='restaurant'" class="">Find Restaurants</span>
+                                
+                            </button>
+                        </div>
+                        <div class="text-center hidden-md-up col-sm-12 mt-3">
+                            <button class="btn btn--primary btn-lg btn--landing-search" ng-click="SearchByVendor()" type="button">Find Restaurant</button>
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="parallax__holder">
+            <img src="https://foodmandu.com/img/tandoori_chicken.png" class="food-item hidden-sm-down" alt="" style="top: 10%; left:5%;transform: scale(0.7);" data-origin="top: 10%; left:5%;transform: scale(0.7)" data-resize="top:9%;left:4%;transform: scale(0.8);">
+            <img src="https://foodmandu.com/img/flanksteak_cheddar.png" class="food-item hidden-xs-down" alt="" style="right: 5%; top:0%;" data-origin="right: 5%; top:0%;transform: scale(1);" data-resize="top:0%;right:4%;transform: scale(1.1);">
+            <img src="https://foodmandu.com/img/flanksteak_cheddar.png" class="food-item hidden-xs-down" alt="" style="left: 20%; bottom:5%;transform: scale(0.9);" data-origin="left: 20%; bottom:5%;transform: scale(0.9);" data-resize="left: 19%; bottom:4%;transform: scale(1);">
+            <img src="https://foodmandu.com/img/salmon.png" class="food-item hidden-md-down" alt="" style="bottom:-5%; right: 15%" data-origin="bottom:-5%; right: 15%;transform: scale(1);" data-resize="bottom:-5%;right:14%;transform: scale(1.1);">
+            <div class="food-item hidden-sm-up" style="bottom:-15%; display: block; width: 100%;text-align: center" data-origin="bottom:-15%; display: block; width: 100%; text-align:center ;transform: scale(1);" data-resize="bottom:-5%; display: block; width: 100%;text-align: center;transform: scale(1.1);">
+                <img src="/img/salmon-plate.png" alt="" style="width: 80%;">
+            </div>
+        </div>
+    </section>
+
+
+
+    
+
+    <section class="section">
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="small-title inline">FOODMANDU FRESH</h3>
+                    <a href="https://foodmandu.com/Restaurant/Details/1205"><img src="/Images/Foodmandu-Fresh.jpg" style="width:100%;border:none;"></a>
+                    
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <section class="section" style="border: 1px solid #E7E7E7;border-width: 1px 0 0 0;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="small-title inline">FEATURED RESTAURANTS</h2>
+                        
+                        <a href="/Restaurant/Index?q=&amp;c=FEATURED&amp;k=restaurant"><small class="float-right">View all <span class="icomoon icon-arrow-forward"></span></small></a>
+                    </div>
+                                <div class="col-md-6 col-lg-3">
+                                    <div class="listing">
+                                        <div class="listing__photo" style="height:150px !important">
+                                            <a href="/Restaurant/Details/269">
+                                                <img src="https://foodmandu.com//Images/Vendor/269/Logo/Web_040620061639.happy_lunch.Fire_and_Ice_Pizzeria.jpg" style="width:100%;">
+                                            </a>
+                                        </div>
+                                        <div class="title20 mt-2">
+                                            <a href="/Restaurant/Details/269"><span>Fire And Ice Pizzeria</span></a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-3">
+                                    <div class="listing">
+                                        <div class="listing__photo" style="height:150px !important">
+                                            <a href="/Restaurant/Details/326">
+                                                <img src="https://fmdadmin.foodmandu.com//Images/Vendor/326/Logo/Web_Listing_160522042053.jpg" style="width:100%;">
+                                            </a>
+                                        </div>
+                                        <div class="title20 mt-2">
+                                            <a href="/Restaurant/Details/326"><span>The Workshop Eatery</span></a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-3">
+                                    <div class="listing">
+                                        <div class="listing__photo" style="height:150px !important">
+                                            <a href="/Restaurant/Details/967">
+                                                <img src="https://foodmandu.com//Images/Vendor/967/Logo/WhatsApp_Image_2020-07-14_at_12_140720085156.59.36_PM.jpeg" style="width:100%;">
+                                            </a>
+                                        </div>
+                                        <div class="title20 mt-2">
+                                            <a href="/Restaurant/Details/967"><span>Cafe Soma</span></a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-3">
+                                    <div class="listing">
+                                        <div class="listing__photo" style="height:150px !important">
+                                            <a href="/Restaurant/Details/332">
+                                                <img src="https://foodmandu.com//Images/Vendor/332/Logo/mitrandadhaba-web-listing_081117111411.jpg" style="width:100%;">
+                                            </a>
+                                        </div>
+                                        <div class="title20 mt-2">
+                                            <a href="/Restaurant/Details/332"><span>Mittraan Da Dhaba</span></a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-3">
+                                    <div class="listing">
+                                        <div class="listing__photo" style="height:150px !important">
+                                            <a href="/Restaurant/Details/232">
+                                                <img src="https://foodmandu.com//Images/Vendor/232/Logo/le-trio-lsiting-image_021018104148.jpg" style="width:100%;">
+                                            </a>
+                                        </div>
+                                        <div class="title20 mt-2">
+                                            <a href="/Restaurant/Details/232"><span>Le Trio</span></a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-3">
+                                    <div class="listing">
+                                        <div class="listing__photo" style="height:150px !important">
+                                            <a href="/Restaurant/Details/593">
+                                                <img src="https://foodmandu.com//Images/Vendor/593/Logo/pizza-inn-listing-img_231018072751.jpg" style="width:100%;">
+                                            </a>
+                                        </div>
+                                        <div class="title20 mt-2">
+                                            <a href="/Restaurant/Details/593"><span>Pizza Inn</span></a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-3">
+                                    <div class="listing">
+                                        <div class="listing__photo" style="height:150px !important">
+                                            <a href="/Restaurant/Details/603">
+                                                <img src="https://foodmandu.com//Images/Vendor/603/Logo/website__listing_image_500_by_300-min_(2)_221118095417.png" style="width:100%;">
+                                            </a>
+                                        </div>
+                                        <div class="title20 mt-2">
+                                            <a href="/Restaurant/Details/603"><span>Zhong Hua</span></a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-3">
+                                    <div class="listing">
+                                        <div class="listing__photo" style="height:150px !important">
+                                            <a href="/Restaurant/Details/188">
+                                                <img src="https://foodmandu.com//Images/Vendor/188/Logo/Web_300420044456.happy_hunch.Bota.jpg" style="width:100%;">
+                                            </a>
+                                        </div>
+                                        <div class="title20 mt-2">
+                                            <a href="/Restaurant/Details/188"><span>Bricks Cafe Firewood Pizza</span></a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" style="border: 1px solid #E7E7E7;border-width: 1px 0 0 0;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="small-title inline">SPECIAL DEALS</h2>
+
+                        
+
+                        <a href="/Restaurant/Index?q=&amp;c=OFFERS&amp;k=restaurant"><small class="float-right">View all <span class="icomoon icon-arrow-forward"></span></small></a>
+                    </div>
+                                <div class="col-md-6 col-lg-3">
+                                    <div class="listing">
+                                        <div class="listing__photo" style="height:150px !important">
+                                            <a href="/Restaurant/Details/188">
+                                                <img src="https://foodmandu.com//Images/Vendor/188/Logo/Web_300420044456.happy_hunch.Bota.jpg" style="width:100%;">
+                                            </a>
+                                        </div>
+                                        <div class="title20 mt-2">
+                                            <a href="/Restaurant/Details/188"><span>Bricks Cafe Firewood Pizza</span></a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-3">
+                                    <div class="listing">
+                                        <div class="listing__photo" style="height:150px !important">
+                                            <a href="/Restaurant/Details/1038">
+                                                <img src="https://foodmandu.com//Images/Vendor/1038/Logo/Web_021120095357.listing-min.jpg" style="width:100%;">
+                                            </a>
+                                        </div>
+                                        <div class="title20 mt-2">
+                                            <a href="/Restaurant/Details/1038"><span>Baardali Cafe</span></a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-3">
+                                    <div class="listing">
+                                        <div class="listing__photo" style="height:150px !important">
+                                            <a href="/Restaurant/Details/1164">
+                                                <img src="https://foodmandu.com//Images/Vendor/1164/Logo/Web_250321094558.listing.jpg" style="width:100%;">
+                                            </a>
+                                        </div>
+                                        <div class="title20 mt-2">
+                                            <a href="/Restaurant/Details/1164"><span>Alphabeat Restaurant</span></a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-3">
+                                    <div class="listing">
+                                        <div class="listing__photo" style="height:150px !important">
+                                            <a href="/Restaurant/Details/609">
+                                                <img src="https://foodmandu.com//Images/Vendor/609/Logo/website__listing_image_500_by_300-min_(1)_221118095139.png" style="width:100%;">
+                                            </a>
+                                        </div>
+                                        <div class="title20 mt-2">
+                                            <a href="/Restaurant/Details/609"><span>Cafe De Olla</span></a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-3">
+                                    <div class="listing">
+                                        <div class="listing__photo" style="height:150px !important">
+                                            <a href="/Restaurant/Details/1267">
+                                                <img src="https://fmdadmin.foodmandu.com//Images/Vendor/1267/Logo/Web_271021062816.listing_(4).jpg" style="width:100%;">
+                                            </a>
+                                        </div>
+                                        <div class="title20 mt-2">
+                                            <a href="/Restaurant/Details/1267"><span>Krishna's Biryani (King of Biryani)</span></a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-3">
+                                    <div class="listing">
+                                        <div class="listing__photo" style="height:150px !important">
+                                            <a href="/Restaurant/Details/1278">
+                                                <img src="https://foodmandu.com//Images/Vendor/1278/Logo/wok_200122054342.story.web.listing-min.png" style="width:100%;">
+                                            </a>
+                                        </div>
+                                        <div class="title20 mt-2">
+                                            <a href="/Restaurant/Details/1278"><span>Wok Story</span></a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-3">
+                                    <div class="listing">
+                                        <div class="listing__photo" style="height:150px !important">
+                                            <a href="/Restaurant/Details/972">
+                                                <img src="https://foodmandu.com//Images/Vendor/972/Logo/Web_160620064526.happy_lunch.Simon_Noodle.jpg" style="width:100%;">
+                                            </a>
+                                        </div>
+                                        <div class="title20 mt-2">
+                                            <a href="/Restaurant/Details/972"><span>Simon Noodle House Restaurant</span></a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-3">
+                                    <div class="listing">
+                                        <div class="listing__photo" style="height:150px !important">
+                                            <a href="/Restaurant/Details/1292">
+                                                <img src="https://foodmandu.com//Images/Vendor/1292/Logo/Gourmet_180122102145.burger.web.listing-min.png" style="width:100%;">
+                                            </a>
+                                        </div>
+                                        <div class="title20 mt-2">
+                                            <a href="/Restaurant/Details/1292"><span>Gourmet Burger (Your Burger Specialist)</span></a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                </div>
+            </div>
+        </section>
+
+
+
+    <section class="section section--testimonial">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-2"></div>
+                <div class="col-md-8 text-center">
+                    <h3 class="text-white text-center">About Us</h3>
+                    <p class="text-white text-center">
+                        Foodmandu is the fastest, easiest and most convenient way to enjoy the best food of your favourite restaurants at home, at the office or wherever you want to.
+                    </p>
+                    <p class="text-white text-center">
+                        We know that your time is valuable and sometimes every minute in the day counts.
+                        That’s why we deliver! So you can spend more time doing the things you love.
+                    </p>
+                    <button class="btn btn-outline"><a href="/Home/About">	LEARN MORE</a></button>
+                </div>
+                <div class="col-md-2"></div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <section class="section section--download-app" style="border:1px solid #E7E7E7;
+             border-width:1px 0 1px 0;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 d-flex align-items-center">
+                    <div>
+                        <h1 class="red"><b>Download the app</b></h1>
+                        <p>Always on the go.</p>
+                        <p> Food - whenever and wherever you want it!</p>
+                        <a href="https://itunes.apple.com/np/app/foodmandu/id983591001"><img src="/img/itunes-app-store-logo.png" alt="" class="download-logo"></a>
+                        <a href="https://play.google.com/store/apps/details?id=com.app.foodmandu"><img src="/img/google-play-store-logo.png" alt="" class="download-logo"></a>
+                    </div>
+                </div>
+                <div class="col-md-5 img-container">
+                    <img src="/img/download_app_frame.png" alt="download">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section" style="background-color:#F7F7F7;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">&nbsp;</div>
+                <div class="col-md-6">
+                    <div class="text-center" style="text-align:justify;">
+
+                        <h2 style="text-align:center;">
+                            <b>
+                                List your Restaurant at Foodmandu!<br> Reach 2,00,000 + new customers.
+                            </b>
+                        </h2>
+                    </div>
+                    <br>
+                    <div class="text-center">
+                        <button class="btn btn--primary text-center" ng-click="OpenEnquiryForm()">Send a request</button>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-2 mt-2">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+</div>
+
+
+
+
+
+<script type="text/ng-template" id="customPopupTemplate.html">
+	<div class="custom-popup-wrapper"
+		 ng-style="{top: position().top+'px', left: position().left+'px'}"
+		 style="display: block;"
+		 ng-show="isOpen() && !moveInProgress"
+		 aria-hidden="{{!isOpen()}}">
+		<p class="message">select location from drop down.</p>
+
+		<ul class="dropdown-menu" role="listbox">
+			<li class="uib-typeahead-match" ng-repeat="match in matches track by $index" ng-class="{active: isActive($index) }"
+				ng-mouseenter="selectActive($index)" ng-click="selectMatch($index)" role="option" id="{{::match.id}}">
+				<div uib-typeahead-match index="$index" match="match" query="query" template-url="templateUrl"></div>
+			</li>
+		</ul>
+	</div>
+</script>
+
+<script type="text/ng-template" id="EnquiryForm">
+
+<div class="container">
+    <div class="modal-action modal-action--cancel" data-ng-click="cancelEditing()">×</div>
+    <div class="modal-header">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="modal-title mb-2" id="modal-title">Get listed in Foodmandu</h3>
+                <p>Please fill up your details.</p>				
+            </div>
+        </div>
+    </div><!-- .modal-header -->
+
+    <div class="modal-body signup__form-container mt-3" id="modal-body">
+        <div class="page-notifications page-notifications--success" ng-show="showMessage">
+            <p class="green">Your details have been sent. We will contact you soon.</p>
+        </div>
+        <form name="enquiryform">            
+            <div class="row spinner">
+                <div class="form-group col-sm-6">
+                    <label class="small-title">Your Name <span style="color:red;" title="Your name is required">*</span></label>
+                    <input type="text" ng-class="{'form-control error': (enquiryform.ContactPerson.$error.required&&enquiryform.ContactPerson.$touched), 'form-control': ContactPerson!=''}" name="ContactPerson" placeholder="Your Name" ng-model="enquiry.ContactPerson" required="" />
+                    <div ng-show="enquiryform.$submitted || enquiryform.ContactPerson.$touched">
+                        <p class="red" ng-show="enquiryform.ContactPerson.$error.required">Your name is required.</p>
+                    </div>
+                </div>
+				<div class="form-group col-sm-6">
+					<label class="small-title">Restaurant/Store Name <span style="color:red;" title="Restaurant Name  is required">*</span></label>
+					<input type="text" ng-class="{'form-control error': (enquiryform.RestaurantName.$error.required&&enquiryform.RestaurantName.$touched), 'form-control': RestaurantName!=''}" name="RestaurantName" placeholder="your restaurant/store name" ng-model="enquiry.RestaurantName" required="" />
+					<div ng-show="enquiryform.$submitted || enquiryform.RestaurantName.$touched">
+						<p class="red" ng-show="enquiryform.RestaurantName.$error.required">Restaurant Name  is required.</p>
+					</div>
+				</div>  
+                <div class="form-group col-sm-6">
+                    <label class="small-title">Email Address <span style="color:red;" title="Email  is required">*</span></label>
+                    <input type="email" ng-class="{'form-control error': (enquiryform.ContactEmail.$error.required&&enquiryform.ContactEmail.$touched), 'form-control': ContactEmail!=''}" name="ContactEmail" placeholder="you@yourname" ng-model="enquiry.ContactEmail" required="" />
+                    <div ng-show="enquiryform.$submitted || enquiryform.ContactEmail.$touched">
+                        <p class="red" ng-show="enquiryform.ContactEmail.$error.required">Email  is required.</p>
+                    </div>
+                </div>   
+				<div class="form-group col-sm-6">
+					<label class="small-title">Contact Number <span style="color:red;" title="Contact number  is required">*</span></label>					
+					<input type="text" ng-class="{'form-control error': (enquiryform.ContactNumber.$error.required&&enquiryform.ContactNumber.$touched), 'form-control': ContactNumber!=''}" name="ContactNumber" placeholder="98xxxxxxxx" ng-model="enquiry.ContactNumber" minlength="10" maxlength="10" onkeypress='return event.charCode >= 48 && event.charCode <= 57' required="" />
+					<div ng-show="enquiryform.$submitted || enquiryform.ContactNumber.$touched">
+						<p class="red" ng-show="enquiryform.ContactNumber.$error.required">Contact number  is required.</p>
+					</div>
+				</div> 
+				            
+                <div class="form-group col-sm-12">
+                    <label class="small-title">Details <span style="color:red;" title="Details  is required">*</span></label>
+                    <textarea type="text" rows="7" name="MessageText" ng-class="{'form-control error': (enquiryform.MessageText.$error.required&&enquiryform.MessageText.$touched), 'form-control': MessageText!=''}" ng-model="enquiry.MessageText"  placeholder="Your details here" required=""></textarea>
+                    <div ng-show="enquiryform.$submitted || enquiryform.MessageText.$touched">
+                        <p class="red" ng-show="enquiryform.MessageText.$error.required">Details  is required.</p>
+                    </div>
+                </div>
+
+                <div class="col-sm-12">
+                    <button type="submit" class="btn btn--primary btn-block" ng-click="SaveEnquiry()" ng-disabled="enquiryform.$invalid">Send Message</button>
+                </div>
+                <div class="spinner__loader" ng-show="loading">
+                    <div class="spinner__circle"></div>
+                </div>
+            </div>
+        </form>
+       
+
+    </div>
+    <!-- .modal-body -->
+</div><!-- modal-container -->
+
+</script>
+
+<!-- section end -->
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 footer__menu">
+                    <ul class="list-unstyled">
+                        <li><h3 class="small-title">We're Foodmandu</h3></li>
+                        <li><a href="/Home/About">About Us</a></li>
+                        <li><a href="/Home/AvailableAreas">Available Areas</a></li>
+                        <li><a href="/Home/DeliveryCharge">Delivery Charges</a></li>
+                        <li><a href="https://blog.foodmandu.com/" target="_blank">Blog</a></li>
+                    </ul>
+                    <p>
+
+                        <br></p><h3 class="small-title">Service Hour</h3>
+                        <span style="font-size:80%">08:00 AM to 9:00 PM (NST)</span>
+
+                    <p></p>
+                </div>
+
+                <div class="col-md-2 footer__menu ng-scope" ng-controller="OldVersionController">
+                    <ul class="list-unstyled">
+                        <li><h3 class="small-title">Get Help</h3></li>
+                        <li><a href="/Home/HowToOrder">How to Order?</a></li>
+                        <li><a href="/Home/Faqs">FAQs</a></li>
+                        <li><a href="/Home/Contact">Contact Us</a></li>                         
+                    </ul>
+                    
+
+                </div>
+
+                <div class="col-md-3 footer__menu footer__menu--info">
+                    <ul class="list-unstyled">
+                        <li><h3 class="small-title">Call us</h3></li>
+                        <li>Kathmandu: 4444177, 4440979, 9802034008</li>
+                        <li><h3 class="small-title">Call us</h3></li>
+                        <li>Pokhara: 9802859990, 9802853330  </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 footer__menu footer__menu--download">
+                    <h3 class="small-title block">Download App</h3>
+                    <a href="https://itunes.apple.com/np/app/foodmandu/id983591001"><img src="/img/itunes-app-store-logo.png" alt="" class="download-logo"></a>
+                    <a href="https://play.google.com/store/apps/details?id=com.app.foodmandu"><img src="/img/google-play-store-logo.png" alt="" class="download-logo"></a>
+                    <div class="mt-2">
+                        <h3 class="small-title">Connect with Us</h3>
+                        <br>
+                        <a href="https://www.facebook.com/foodmandu" target="_blank" title="Facebook"><span class="icomoon icon-facebook social-logo"></span></a>
+                        <a href="https://twitter.com/foodmandu" target="_blank" title="Twitter"><span class="icomoon icon-twitter social-logo"></span></a>
+                        <a href="https://www.instagram.com/foodmandu/" target="_blank" title="instagram"><span class="icomoon icon-instagram2 social-logo"></span></a>
+                        <a href="https://blog.foodmandu.com/" target="_blank" title="blog"><span style="font-size:150%; margin: 0px 2px;" class="icomoon icon-blogger social-logo"></span></a>
+                        <a href="https://www.youtube.com/channel/UCDf_rtJmXYSC08spCjoGDlQ" target="_blank" title="Youtube"><span class="icomoon icon-youtube social-logo"></span></a>
+                        
+                    </div>
+                </div>
+
+                <div class="col-md-12 footer__tnc">
+                    <hr>
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href="/Home/TermsOfUse">Terms of Usage</a></li> | 
+                        <li class="list-inline-item"><a href="/Home/PrivacyPolicy"> Privacy Policy</a></li>
+                        <li class="list-inline-item float-md-right">© 2020 Foodmandu Pvt. Ltd. All Rights Reserved.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <a href="javascript:" id="return-to-top"><span class="icomoon icon-arrow-forward"></span></a>
+
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-animate.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-sanitize.js"></script>
+    <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-2.5.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ngStorage/0.3.10/ngStorage.min.js"></script>
+    <script type="text/javascript" src="/js/angular-sticky-box.min.js"></script>
+    <!--
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="js/bootstrap.min.js"></script> -->
+
+    <script src="/js/app.js"></script>
+    <script type="text/javascript">
+
+		var serviceBase = "https://foodmandu.com/webapi/";
+		var baseUrl = "https://foodmandu.com/";
+		var showhomepopup = "False";
+		var showcheckoutpopup = "True";
+
+		var currentDevice = "";
+
+		function GETJ(str, isobj) {
+
+			var json = isobj ? {} : [];
+			try {
+				var stringToJ = str.replace(/\n|\r|\t/g, "");
+				json = angular.fromJson(stringToJ);
+			} catch (e) {
+				console.log("Errorin JSON: " + stringToJ);
+				return isobj ? {} : [];
+			}
+			return json;
+		};
+
+
+    </script>
+    <script type="text/ng-template" id="customTemplate.html">
+
+        <a role="menu">
+
+            <span ng-bind-html="match.label | uibTypeaheadHighlight:query"></span>
+        </a>
+    </script>
+    <script type="text/ng-template" id="customModalPopup">
+<div class="modal-header">
+	<h3 ng-bind-html="modalOptions.headerText"></h3>
+</div>
+<div class="modal-body">
+	
+	<div ng-bind-html="modalOptions.bodyText"></div>
+</div>
+<div class="modal-footer">
+	<button type="button" class="btn"  ng-hide="modalOptions.HideClose"
+			data-ng-click="modalOptions.close()">
+		{{modalOptions.closeButtonText}}
+	</button>
+	<button class="btn btn-primary" ng-hide="modalOptions.HideOK"
+			data-ng-click="modalOptions.ok();">
+		{{modalOptions.actionButtonText}}
+	</button>
+</div>
+
+    </script>
+
+    <script type="text/ng-template" id="ShowMobileWindow">
+<div class="bg-success">
+	<a href="javascript:;"data-ng-click="cancelEditing()" style="float:right;"><i class="glyphicon icon-close"></i></a>
+	<br />
+    <div class="text-center">
+        <span style="color:white; font-size:10px;">
+            Download our App for better user experience 
+        </span>        
+        <span style="float:right">
+            <a href="https://v1g3.app.link/RvLsIG4rwF">
+                <label class="btn btn--hollow" style="background-color:white;">
+                    Get It
+                </label>
+            </a>
+        </span>
+    </div>
+</div><!-- modal-container -->
+    </script>
+
+    <script type="text/ng-template" id="ShowPrevBrowserMsg">
+<div class="container">
+	<div class="modal-action modal-action--cancel" data-ng-click="cancelEditing()">×</div>
+	<div class="modal-header">
+		<div class="row">
+			<div class="col-md-12">
+				<h3 class="modal-title mb-2" id="modal-title">Welcome to Foodmandu!</h3>
+			</div>
+		</div>
+	</div><!-- .modal-header -->
+
+	<div class="modal-body signup__form-container mt-3" id="modal-body">
+		<section class="section section--download-app">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 d-flex align-items-center justify-content-center">
+						<div class="text-center">
+							<p>Blah! blah! blah! find link below</p>
+							
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</section>
+	</div><!-- .modal-body -->
+</div><!-- modal-container -->
+    </script>
+    <script type="text/ng-template" id="ReviewForm">
+
+<div class="container">
+    <div class="modal-action modal-action--cancel" data-ng-click="cancelEditing()">×</div>
+    <div class="modal-header">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="modal-title mb-2" id="modal-title">You are about to leave current website and return to previous version.</h3>
+				<p style="font-size:12px;">Please note that your login session and shopping cart items may not be retained.</p>
+				<p style="font-size:12px;">Would you like to drop some feedback?</p>
+
+            </div>
+        </div>
+	
+    </div><!-- .modal-header -->
+
+    <div class="modal-body signup__form-container mt-3" id="modal-body">
+		<div class="page-notifications page-notifications--success" ng-show="showMessage">
+			<p class="green">Thank you for your valuable feedback.</p>
+		</div>
+       
+            <form name="reviewform">
+                <fieldset ng-disabled="loading">
+                    <div class="row spinner">
+                        <div class="form-group col-sm-12">
+                            <label class="small-title">Your Email</label>
+                            <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" ng-class="{'form-control error': (reviewform.UserEmail.$error.required&&reviewform.UserEmail.$touched), 'form-control': UserEmail!=''}" required name="UserEmail" placeholder="Your Email" ng-model="review.UserEmail" />
+                            <div ng-show="reviewform.$submitted || reviewform.UserEmail.$touched">
+                                <p class="red" ng-show="reviewform.UserEmail.$error.required">Your email is required.</p>
+                            </div>
+                        </div>
+                        <div class="form-group col-sm-12">
+                            <label class="small-title">Feedback/Suggestion</label>
+                            <textarea rows="5" name="MessageText" ng-class="{'form-control error': (reviewform.MessageText.$error.required&&reviewform.MessageText.$touched), 'form-control': UserReviewText!=''}" required="" ng-model="review.UserReviewText" placeholder="Your feedback here"></textarea>
+                            <div ng-show="reviewform.$submitted || reviewform.MessageText.$touched">
+                                <p class="red" ng-show="reviewform.MessageText.$error.required">Please insert your feedback.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <button type="submit" class="btn btn--primary btn-block" ng-click="SaveFeedback()" ng-disabled="reviewform.$invalid">Send feedback and take me to old website</button>
+
+                        </div>
+                        <div class="spinner__loader" ng-show="loading">
+                            <div class="spinner__circle"></div>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+         </div>
+	
+    <!-- .modal-body -->
+</div><!-- modal-container -->
+
+    </script>
+    <script type="text/ng-template" id="ShowEstimateDel">
+
+<div class="container add-delivery-address">
+    <div class="modal-action modal-action--cancel" data-ng-click="cancelEditing()">×</div>
+ 
+
+
+    <div class="modal-body add-delivery-address__form-container mt-3" id="modal-body">
+        Estimated Delivery Charge by Distance
+        <hr />
+        <p>
+            The delivery charge is calculated based on the order amount (excluding taxes and service charges) and the approximate distance between the selected restaurant and the delivery location. Please refer to the below chart to get an idea of the applicable delivery charge.
+        </p>
+
+        <div style="margin-top:5px;">
+
+            <table>
+                <tr>
+                    <th rowspan="2" style="text-align: center; background-color:#FFFFFF;" width="75">
+                        Food Value
+                    </th>
+                    <th style="text-align: center; background-color:#FFFFFF;" width="60">
+                        Up to 1 Km
+                    </th>
+                    <th style="text-align: center; background-color:#FFFFFF;" width="60">
+                        Up to 2 Km
+                    </th>
+                    <th style="text-align: center; background-color:#FFFFFF;" width="60">
+                        Up to 3 Km
+                    </th>
+                    <th style="text-align: center; background-color:#FFFFFF;" width="60">
+                        Up to 4 Km
+                    </th>
+                    <th style="text-align: center; background-color:#FFFFFF;" width="60">
+                        Up to 5 Km
+                    </th>
+                    <th style="text-align: center; background-color:#FFFFFF;" width="60">
+                        Up to 6 Km
+                    </th>
+                    <th style="text-align: center; background-color:#FFFFFF;" width="60">
+                        Up to 7 Km
+                    </th>
+                    <th style="text-align: center; background-color:#FFFFFF;" width="60">
+                        Up to 8 Km
+                    </th>
+                    <th style="text-align: center; background-color:#FFFFFF;" width="60">
+                        Up to 9 Km
+                    </th>
+                    <th style="text-align: center; background-color:#FFFFFF;" width="60">
+                        Up to 10 Km
+                    </th>
+                </tr>
+            </table>
+
+            <table>
+                <tr>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="75">
+                        400.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        50.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        70.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        90.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        120.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        150.00
+                    </td>
+
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        180.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        210.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        240.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        270.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        300.00
+                    </td>
+
+                </tr>
+            </table>
+
+            <table>
+                <tr>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="75">
+                        500.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        50.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        50.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        70.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        100.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        130.00
+                    </td>
+
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        160.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        190.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        220.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        250.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        280.00
+                    </td>
+
+                </tr>
+            </table>
+
+            <table>
+                <tr>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="75">
+                        600.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        50.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        50.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        50.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        80.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        110.00
+                    </td>
+
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        140.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        170.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        200.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        230.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        260.00
+                    </td>
+
+                </tr>
+            </table>
+
+            <table>
+                <tr>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="75">
+                        700.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        50.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        50.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        50.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        60.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        90.00
+                    </td>
+
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        120.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        150.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        180.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        210.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        240.00
+                    </td>
+
+                </tr>
+            </table>
+
+            <table>
+                <tr>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="75">
+                        800.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        50.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        50.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        50.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        50.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        70.00
+                    </td>
+
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        100.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        130.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        160.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        190.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        220.00
+                    </td>
+
+                </tr>
+            </table>
+
+            <table >
+                <tr>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="75">
+                        900.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        50.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        50.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        50.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        50.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        50.00
+                    </td>
+
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        80.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        110.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        140.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        170.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        200.00
+                    </td>
+
+                </tr>
+            </table>
+
+            <table >
+                <tr>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="75">
+                        1000.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        50.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        50.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        50.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        50.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        50.00
+                    </td>
+
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        60.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        90.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        120.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        150.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        180.00
+                    </td>
+
+                </tr>
+            </table>
+
+            <table >
+                <tr>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="75">
+                        1100.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        50.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        50.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        50.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        50.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        50.00
+                    </td>
+
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        50.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        70.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        100.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        130.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        160.00
+                    </td>
+
+                </tr>
+            </table>
+
+            <table >
+                <tr>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="75">
+                        1200.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        50.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        50.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        50.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        50.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        50.00
+                    </td>
+
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        50.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        50.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        80.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        110.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        140.00
+                    </td>
+
+                </tr>
+            </table>
+
+            <table >
+                <tr>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="75">
+                        1300.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        50.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        50.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        50.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        50.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        50.00
+                    </td>
+
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        50.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        50.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        60.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        90.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        120.00
+                    </td>
+
+                </tr>
+            </table>
+
+            <table >
+                <tr>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="75">
+                        1400.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        50.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        50.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        50.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        50.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        50.00
+                    </td>
+
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        50.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        50.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        50.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        70.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        100.00
+                    </td>
+
+                </tr>
+            </table>
+
+            <table >
+                <tr>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="75">
+                        1500.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        50.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        50.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        50.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        50.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        50.00
+                    </td>
+
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        50.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        50.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        50.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        50.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        80.00
+                    </td>
+
+                </tr>
+            </table>
+
+            <table >
+                <tr>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="75">
+                        1600.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        50.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        50.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        50.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        50.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        50.00
+                    </td>
+
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        50.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        50.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        50.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        50.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        60.00
+                    </td>
+
+                </tr>
+            </table>
+
+            <table >
+                <tr>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="75">
+                        1700.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        50.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        50.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        50.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        50.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        50.00
+                    </td>
+
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        50.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        50.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        50.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        50.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        50.00
+                    </td>
+
+                </tr>
+            </table>
+
+            <table >
+                <tr>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="75">
+                        More than 1700.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        50.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        50.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        50.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        50.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        50.00
+                    </td>
+
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        50.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        50.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        50.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        50.00
+                    </td>
+                    <td style="text-align: center; background-color:#FFFFFF;" width="60">
+                        50.00
+                    </td>
+
+                </tr>
+            </table>
+
+      
+
+    </div>
+</div>
+
+
+    </div><!-- .modal-body -->
+    </script>
+
+
+
+    
+
+	<script type="text/javascript" src="/js/owlcarousel.js"></script>
+	<script type="text/javascript" src="/lib/AngController/Dashboard/dashbaordController.js"></script>
+
+
+	<script>
+
+		//Show Hide Search Filter
+		var is_index = true;
+
+
+		$(document).ready(function () {
+			//setTimeout(function () { $('.dropme').slideUp(); }, 3000);
+
+			var newstyle;
+			var originstyle;
+			$(".animate-bg").focus(function () {
+				$(".food-item").each(function () {
+					newstyle = $(this).data("resize");
+					$(this).attr('style', newstyle);
+					$(".home_hero").attr('style', 'background-size: 180px');
+				});
+			}).blur(function () {
+				$(".food-item").each(function () {
+					originstyle = $(this).data("origin");
+					$(this).attr('style', originstyle);
+					$(".home_hero").attr('style', 'background-size: 200px');
+				});
+			});
+
+			$('#menucarousel').owlCarousel({
+				loop: true,
+				autoplay: false,
+				dots: false,
+				dotsEach: 6,
+				autoplayTimeout: 2500,
+				responsiveClass: true,
+				responsive: {
+					0: {
+						items: 3
+					},
+					600: {
+						items: 6
+					},
+					1000: {
+						items: 8
+					}
+				}
+			});
+		});
+
+		$("#ShowAllLink").click(function () {
+
+			$(".RemainingItems").css("display", "block");
+			$("#ShowAllLink").css("display", "none");
+		})
+
+		$("#ShowAllLink_HL").click(function () {
+
+		    $(".RemainingItems_HL").css("display", "block");
+		    $("#ShowAllLink_HL").css("display", "none");
+		})
+
+		$("#ShowAllLink_BKT").click(function () {
+
+		    $(".RemainingItems_BKT").css("display", "block");
+		    $("#ShowAllLink_BKT").css("display", "none");
+		})
+
+
+		$("#btn_show").click(function () {
+			$(".subscribe-body").fadeIn("slow");
+			$("#btn_show").hide();
+		});
+
+		$("#btn_hide").click(function () {
+			$(".subscribe-body").fadeOut("slow");
+			$("#btn_show").fadeIn("slow");
+		});
+
+
+	</script>
+
+
+    <script src="https://rawgit.com/allenhwkim/angularjs-google-maps/master/build/scripts/ng-map.js"></script>
+    <script src="/lib/AngController/Product/ProductController.js?id=39252589"></script>
+    
+    
+    <script src="/lib/AngController/Min/Dashboard/checkMobileBrowser.min.js?id=12398476534"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-filter/0.5.17/angular-filter.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript">
+        ; (function () {
+            'use strict';
+            app.controller('mobilePopupController', ['$scope', function ($scope) {
+                $scope.showMobilePopup = false;
+
+                if (typeof (isMobile) != 'undefined') {
+                    if (isMobile) {
+                        $scope.showMobilePopup = true;
+                    }
+                };
+
+            }]);
+        }());
+
+    </script>
+    <script src="/lib/AngController/Manage/OldVersionController.js"></script>
+    
+
+
+
+   
+
+
+
+  
+
+
+
+
+
+</body></html>

@@ -1,17 +1,27 @@
 <suite name="AllTests" verbose="1">
     <test name="PositiveTests">
-        <classes>
+        <parameter name = "siteName" value="https://foodmandu.com/"/>
+        <parameter name="email" value="test77282@gmail.com"/>
+        <parameter name="password" value="Test!@#123"/>
+        <parameter name="searchRestaurantName" value="kiran"/>
+        <parameter name="searchFoodItemName" value="momo"/>
+      <classes>
             <class name="com.example.seleniumtry3.PositiveTests"/>
         </classes>
     </test>
     <test name="NegativeTests">
+        <parameter name = "siteName" value="https://foodmandu.com/"/>
+        <parameter name="email" value="test7782@gmail.com"/>
+        <parameter name="password" value="Test!@#123"/>
+        <parameter name="searchRestaurantName" value="kiran"/>
+        <parameter name="searchFoodItemName" value="momo"/>
         <classes>
-            <class name="com.example.seleniumtry3.NegativeTests"/>
+            <class name="com.example.seleniumtry3.PositiveTests"/>
         </classes>
     </test>
-    <test name="MainPage">
-        <classes>
-            <class name="com.example.seleniumtry3.MainPage"/>
-        </classes>
-    </test>
+<!--    <test name="MainPage">-->
+<!--        <classes>-->
+<!--            <class name="com.example.seleniumtry3.MainPage"/>-->
+<!--        </classes>-->
+<!--    </test>-->
 </suite>
